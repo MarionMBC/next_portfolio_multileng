@@ -13,7 +13,7 @@ import {
 } from 'react-icons/di'
 import {SiFirebase, SiGithub, SiLinkedin, SiTailwindcss} from 'react-icons/si'
 import img2 from './assets/img/code1.svg'
-import syncpro from './assets/img/syncpro.webp'
+import syncpro from './assets/img/syncpro.png'
 import {CustomTimeLine} from "@/app/components/timeline/timeline";
 // import syncro from './assets/img/1.png'
 // import journal from './assets/img/2.png'
@@ -121,7 +121,7 @@ export default function Home() {
 
 
       <section className='px-5 lg:px-40 mb-16 flex flex-col sm:flex-row items-center justify-items-center sm:justify-start'>
-        <Image loading={'eager'} className={'w-72'} src={syncpro} alt={''}/>
+        <Image className={'w-72'} alt={''} src={syncpro}/>
         <div className={'p-5 flex flex-col space-y-3 justify-center'}>
           <p className={'text-xl font-medium'}>Syncpro</p>
           <text className={''}>Enterprise Resource Planning (ERP) system that allows efficient and secure management of businesses.</text>
