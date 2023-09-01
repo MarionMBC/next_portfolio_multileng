@@ -11,15 +11,11 @@ import {
   DiPython,
   DiReact
 } from 'react-icons/di'
-import {SiFirebase, SiGithub, SiLinkedin, SiTailwindcss} from 'react-icons/si'
-import img2 from './assets/img/code1.svg'
-import syncpro from './assets/img/syncpro.png'
-import {CustomTimeLine} from "@/app/components/timeline/timeline";
-// import syncro from './assets/img/1.png'
-// import journal from './assets/img/2.png'
-// import alura from './assets/img/3.png'
 
-// import NavBar from './components/NavBar/NavBar'
+import {SiFirebase, SiGithub, SiLinkedin, SiTailwindcss} from 'react-icons/si'
+import img2 from '../../public/images/code1.svg'
+import syncpro from '../../public/images/syncpro.png'
+import {CustomTimeLine} from "@/app/components/timeline/timeline";
 
 export default function Home() {
 
