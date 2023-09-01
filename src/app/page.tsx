@@ -130,7 +130,6 @@ export default function Home() {
             <SiTailwindcss className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
             <DiMsqlServer className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
             <SiFirebase className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
-
           </div>
         </div>
       </section>
