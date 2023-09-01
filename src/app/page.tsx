@@ -13,7 +13,7 @@ import {
 } from 'react-icons/di'
 import {SiFirebase, SiGithub, SiLinkedin, SiTailwindcss} from 'react-icons/si'
 import img2 from './assets/img/code1.svg'
-import syncpro from './assets/img/syncpro.png'
+import syncpro from './assets/img/syncpro.webp'
 import {CustomTimeLine} from "@/app/components/timeline/timeline";
 // import syncro from './assets/img/1.png'
 // import journal from './assets/img/2.png'
@@ -52,7 +52,7 @@ export default function Home() {
           </div>
           <div>
 
-            <Image alt='' className=" text-white font-bold py-2 px-4 animate-floating" src={img2}/>
+            <Image alt='' className="text-white font-bold py-2 px-4 animate-floating" src={img2}/>
           </div>
 
         </div>
