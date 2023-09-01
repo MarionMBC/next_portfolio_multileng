@@ -14,7 +14,7 @@ import {
 
 import {SiFirebase, SiGithub, SiLinkedin, SiTailwindcss} from 'react-icons/si'
 import img2 from '../../public/images/code1.svg'
-import syncpro from '../../public/images/syncpro.png'
+import syncpro from '../../public/images/syncpro.webp'
 import {CustomTimeLine} from "@/app/components/timeline/timeline";
 
 export default function Home() {

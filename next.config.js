@@ -1,12 +1,4 @@
- /** @type {import('next').NextConfig}*/
-
-const nextConfig = {
-     images: {
-         loader: 'default',
-     },
-}
+/** @type {import('next').NextConfig} */
+const nextConfig = {}
 
 module.exports = nextConfig
-
-
-
