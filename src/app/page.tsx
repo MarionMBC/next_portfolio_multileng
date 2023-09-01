@@ -1,113 +1,147 @@
 import Image from 'next/image'
+import {AiFillGithub} from 'react-icons/ai'
+import {
+  DiBootstrap,
+  DiCss3,
+  DiHtml5,
+  DiJavascript,
+  DiMsqlServer,
+  DiMysql,
+  DiNodejs,
+  DiPython,
+  DiReact
+} from 'react-icons/di'
+import {SiFirebase, SiGithub, SiLinkedin, SiTailwindcss} from 'react-icons/si'
+import img2 from './assets/img/code1.svg'
+import Mock1 from './assets/img/syncpro.png'
+import {CustomTimeLine} from "@/app/components/timeline/timeline";
+// import syncro from './assets/img/1.png'
+// import journal from './assets/img/2.png'
+// import alura from './assets/img/3.png'
+
+// import NavBar from './components/NavBar/NavBar'
 
 export default function Home() {
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
+    <main className="h-fit overflow-hidden bg-white dark:bg-gray-900 dark:text-white">
+
+      <div className='px-5 mt-10 lg:px-40'>
+        <div className='grid-cols-1 grid md:grid-cols-2 items-center justify-between'>
+          <div className=''>
+            <p className='text-5xl mb-5 dark:text-cyan-300'>
+              Hi
+            </p>
+            <section className='border-l-2 mt-4 lg:text-2xl border-black ps-2 dark:border-white'>
+              <p className='break-words'>
+                My name is Marion Bustamante, I&apos;m a <span className='text-cyan-300'>systems engineering </span>
+                student and a <span className='text-cyan-300'>full-stack developer</span>.
+                I&apos;m from Francisco Morazán, Honduras. I have developed several
+                software solutions. I am deeply passionate about software development.
+              </p>
+              <p className='break-words mt-2'>
+                Over the past two years, I have gained extensive <span className='text-cyan-300'>experience</span>.
+                working
+                with a broad range of web technologies, which has equipped
+                me with valuable skills for approaching new challenges
+                and creating innovative solutions in the future.
+              </p>
+            </section>
+
+
+          </div>
+          <div>
+
+            <Image alt='' className=" text-white font-bold py-2 px-4 animate-floating" src={img2}/>
+          </div>
+
+        </div>
+
+        <p className='text-2xl mt-[53px] mb-10 dark:text-cyan-300 self-center'>
+          Technologies
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+        <div className="relative flex overflow-x-hidden text-2xl lg:text-4xl">
+          <div className="animate-marquee py-4 flex whitespace-nowrap transition-all">
+            <AiFillGithub
+              className='mx-4 lg:mx-10 cursor-pointer hover:text-cyan-300 hover:scale-150 transition-all easy-in-out'/>
+            <DiReact
+              className='mx-4 lg:mx-10 cursor-pointer hover:text-cyan-300 hover:scale-150 transition-all easy-in-out'/>
+            <DiMsqlServer
+              className='mx-4 lg:mx-10 cursor-pointer hover:text-cyan-300 hover:scale-150 transition-all easy-in-out'/>
+            <DiMysql
+              className='mx-4 lg:mx-10 cursor-pointer hover:text-cyan-300 hover:scale-150 transition-all easy-in-out'/>
+            <DiHtml5
+              className='mx-4 lg:mx-10 cursor-pointer hover:text-cyan-300 hover:scale-150 transition-all easy-in-out'/>
+            <DiCss3
+              className='mx-4 lg:mx-10 cursor-pointer hover:text-cyan-300 hover:scale-150 transition-all easy-in-out'/>
+            <DiBootstrap
+              className='mx-4 lg:mx-10 cursor-pointer hover:text-cyan-300 hover:scale-150 transition-all easy-in-out'/>
+            <DiNodejs
+              className='mx-4 lg:mx-10 cursor-pointer hover:text-cyan-300 hover:scale-150 transition-all easy-in-out'/>
+            <DiJavascript
+              className='mx-4 lg:mx-10 cursor-pointer hover:text-cyan-300 hover:scale-150 transition-all easy-in-out'/>
+            <DiPython
+              className='mx-4 lg:mx-10 cursor-pointer hover:text-cyan-300 hover:scale-150 transition-all easy-in-out'/>
+            <SiTailwindcss
+              className='mx-4 lg:mx-10 cursor-pointer hover:text-cyan-300 hover:scale-150 transition-all easy-in-out'/>
+            <SiFirebase
+              className='mx-4 lg:mx-10 cursor-pointer hover:text-cyan-300 hover:scale-150 transition-all easy-in-out'/>
+
+          </div>
+          <div className="absolute top-0 py-4 flex animate-marquee2 whitespace-nowrap transition-all">
+            <AiFillGithub
+              className='mx-4 lg:mx-10 cursor-pointer hover:text-cyan-300 hover:scale-150 transition-all easy-in-out'/>
+            <DiReact
+              className='mx-4 lg:mx-10 cursor-pointer hover:text-cyan-300 hover:scale-150 transition-all easy-in-out'/>
+            <DiMsqlServer
+              className='mx-4 lg:mx-10 cursor-pointer hover:text-cyan-300 hover:scale-150 transition-all easy-in-out'/>
+            <DiMysql
+              className='mx-4 lg:mx-10 cursor-pointer hover:text-cyan-300 hover:scale-150 transition-all easy-in-out'/>
+            <DiHtml5
+              className='mx-4 lg:mx-10 cursor-pointer hover:text-cyan-300 hover:scale-150 transition-all easy-in-out'/>
+            <DiCss3
+              className='mx-4 lg:mx-10 cursor-pointer hover:text-cyan-300 hover:scale-150 transition-all easy-in-out'/>
+            <DiBootstrap
+              className='mx-4 lg:mx-10 cursor-pointer hover:text-cyan-300 hover:scale-150 transition-all easy-in-out'/>
+            <DiNodejs
+              className='mx-4 lg:mx-10 cursor-pointer hover:text-cyan-300 hover:scale-150 transition-all easy-in-out'/>
+            <DiJavascript
+              className='mx-4 lg:mx-10 cursor-pointer hover:text-cyan-300 hover:scale-150 transition-all easy-in-out'/>
+            <DiPython
+              className='mx-4 lg:mx-10 cursor-pointer hover:text-cyan-300 hover:scale-150 transition-all easy-in-out'/>
+            <SiTailwindcss
+              className='mx-4 lg:mx-10 cursor-pointer hover:text-cyan-300 hover:scale-150 transition-all easy-in-out'/>
+            <SiFirebase
+              className='mx-4 lg:mx-10 cursor-pointer hover:text-cyan-300 hover:scale-150 transition-all easy-in-out'/>
+          </div>
+
         </div>
       </div>
+      <p className='px-5 mt-10 mb-16 lg:px-40 text-2xl text-black dark:text-cyan-300'>Projects</p>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <section className='px-5 lg:px-40 mb-16 flex flex-col sm:flex-row items-center justify-items-center sm:justify-start'>
+        <Image className={'w-72'} src={Mock1} alt={'...'}/>
+        <div className={'p-5 flex flex-col space-y-3 justify-center'}>
+          <p className={'text-xl font-medium'}>Syncpro</p>
+          <text className={''}>Enterprise Resource Planning (ERP) system that allows efficient and secure management of businesses.</text>
+          <div className={'flex space-x-2 cursor-pointer z-40 text-custom-yellow'}>
+            <DiReact className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
+            <SiTailwindcss className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
+            <DiMsqlServer className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
+            <SiFirebase className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          </div>
+        </div>
+      </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <p className='px-5 my-16 mb-10 lg:px-40 text-2xl text-black dark:text-cyan-300'>Education</p>
+      <section className='px-5 my-10 flex flex-col items-center '>
+        <CustomTimeLine/>
+      </section>
+
+
     </main>
   )
 }
