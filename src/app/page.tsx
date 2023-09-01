@@ -121,7 +121,7 @@ export default function Home() {
 
 
       <section className='px-5 lg:px-40 mb-16 flex flex-col sm:flex-row items-center justify-items-center sm:justify-start'>
-        <Image className={'w-72'} src={syncpro} alt={''}/>
+        <Image loading={'eager'} className={'w-72'} src={syncpro} alt={''}/>
         <div className={'p-5 flex flex-col space-y-3 justify-center'}>
           <p className={'text-xl font-medium'}>Syncpro</p>
           <text className={''}>Enterprise Resource Planning (ERP) system that allows efficient and secure management of businesses.</text>
