@@ -6,10 +6,10 @@ import { Inter } from 'next/font/google'
 import NavBar from './components/NavBar/NavBar'
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  title: 'MarionMBC',
-  description: 'Hecho con :3 por MarionMBC',
-}
+// export const metadata: Metadata = {
+//   title: 'MarionMBC',
+//   description: 'Hecho con :3 por MarionMBC',
+// }
 
 
 export default function RootLayout({
