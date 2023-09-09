@@ -56,7 +56,7 @@ export default function Home() {
                 and creating innovative solutions in the future.
               </p>
 
-              <div className='flex mt-5 relative'>
+              <div className='mt-5 relative'>
                 <button
                   onClick={downloadPDF}
                   className='items-center justify-center px-5 py-2 border border-transparent text-base font-medium rounded-md text-white bg-cyan-500 hover:bg-cyan-700 cursor-pointer'
