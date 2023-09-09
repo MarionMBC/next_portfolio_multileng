@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import {AiFillGithub} from 'react-icons/ai'
 import {
@@ -20,9 +22,15 @@ import syncpro from '../../public/images/syncpro.webp'
 import alura from '../../public/images/alura.png'
 import {CustomTimeLine} from "@/app/components/timeline/timeline";
 import MyComponent from "@/app/contact/page";
+// @ts-ignore
+import cv from "../../public/images/Marion_Bustamante_Resume_EN.pdf"
 
+function downloadPDF() {
+  window.open(cv);
+}
 
 export default function Home() {
+
 
   return (
     <main className="h-fit overflow-hidden bg-white dark:bg-gray-900 dark:text-white">
@@ -47,6 +55,15 @@ export default function Home() {
                 me with valuable skills for approaching new challenges
                 and creating innovative solutions in the future.
               </p>
+
+              <div className='flex mt-5 relative'>
+                <button
+                  onClick={downloadPDF}
+                  className='items-center justify-center px-5 py-2 border border-transparent text-base font-medium rounded-md text-white bg-cyan-500 hover:bg-cyan-700 cursor-pointer'
+                >
+                  Download CV
+                </button>
+              </div>
             </section>
 
 
