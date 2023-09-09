@@ -13,7 +13,7 @@ import {
   DiPython,
   DiReact,
 } from 'react-icons/di'
-import {BiLogoRedux} from 'react-icons/bi'
+import {BiDownload, BiLogoRedux} from 'react-icons/bi'
 
 
 import {SiFirebase, SiGithub, SiLinkedin, SiTailwindcss} from 'react-icons/si'
@@ -59,9 +59,13 @@ export default function Home() {
               <div className='mt-5 relative'>
                 <button
                   onClick={downloadPDF}
-                  className='items-center justify-center px-5 py-2 border border-transparent text-base font-medium rounded-md text-white bg-cyan-500 hover:bg-cyan-700 cursor-pointer'
+                  className='flex space-x-2 items-center justify-center px-3 py-2 border border-transparent text-base font-medium rounded-md text-white bg-cyan-500 hover:bg-cyan-700 cursor-pointer'
                 >
-                  Download CV
+                  <p>
+                    Resume
+                  </p>
+                  <BiDownload className='inline-block ms-2'/>
+
                 </button>
               </div>
             </section>
