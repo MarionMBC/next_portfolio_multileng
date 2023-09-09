@@ -9,13 +9,17 @@ import {
   DiMysql,
   DiNodejs,
   DiPython,
-  DiReact
+  DiReact,
 } from 'react-icons/di'
+import {BiLogoRedux} from 'react-icons/bi'
+
 
 import {SiFirebase, SiGithub, SiLinkedin, SiTailwindcss} from 'react-icons/si'
 import img2 from '../../public/images/code1.svg'
 import syncpro from '../../public/images/syncpro.webp'
+import alura from '../../public/images/alura.png'
 import {CustomTimeLine} from "@/app/components/timeline/timeline";
+
 
 export default function Home() {
 
@@ -118,7 +122,7 @@ export default function Home() {
 
       <section className='px-5 lg:px-40 mb-16 flex flex-col sm:flex-row items-center justify-items-center sm:justify-start'>
         <Image className={'w-72'} alt={''} src={syncpro}/>
-        <div className={'p-5 flex flex-col space-y-3 justify-center'}>
+        <div className={'p-5 flex flex-col items-center sm:items-start space-y-3 justify-center'}>
           <p className={'text-xl font-medium'}>Syncpro</p>
           <text className={''}>Enterprise Resource Planning (ERP) system that allows efficient and secure management of businesses.</text>
           <div className={'flex space-x-2 cursor-pointer z-40 text-custom-yellow'}>
@@ -126,6 +130,19 @@ export default function Home() {
             <SiTailwindcss className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
             <DiMsqlServer className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
             <SiFirebase className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
+            <DiNodejs className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
+            <BiLogoRedux className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
+          </div>
+        </div>
+      </section>
+      <section className='px-5 lg:px-40 mb-16 flex flex-col sm:flex-row items-center justify-items-center sm:justify-start'>
+        <Image className={'w-72'} alt={''} src={alura}/>
+        <div className={'p-5 flex flex-col items-center sm:items-start space-y-3 justify-center'}>
+          <p className={'text-xl font-medium'}>Alura Encrypter</p>
+          <text className={''}>React Text Encrypter.</text>
+          <div className={'flex space-x-2 cursor-pointer z-40 text-custom-yellow'}>
+            <DiReact className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
+            <SiTailwindcss className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
           </div>
         </div>
       </section>
@@ -134,6 +151,10 @@ export default function Home() {
       <p className='px-5 my-16 mb-10 lg:px-40 text-2xl text-black dark:text-cyan-300'>Education</p>
       <section className='px-5 my-10 flex flex-col items-center '>
         <CustomTimeLine/>
+      </section>
+
+      <section>
+        
       </section>
 
 
