@@ -26,10 +26,11 @@ const Footer = ({ setDarkToggle, darkToggle } : Props ) => {
 
               </a>
             </div>
+
           </div>
         <div className="py-16 flex flex-col justify-center items-center">
           <p
-            className="mt-6 text-xs lg:text-sm leading-none text-gray-900 dark:text-gray-50">{new Date().getFullYear()} Marion
+            className="mt-6 text-center text-xs lg:text-sm leading-none text-gray-900 dark:text-gray-50">{new Date().getFullYear()} Marion
             Bustamante. All Rights Reserved.</p>
         </div>
       </footer>

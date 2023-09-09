@@ -157,16 +157,20 @@ const MyComponent = () => {
                   </div>
                   <div className="py-5">
                     {submitStatus === "success" ? (
-                      <div className="text-green-600 dark:text-green-300 mb-5 font-medium">¡El correo se ha enviado exitosamente!</div>
+                      <div className="text-green-600 dark:text-green-300 mb-5 font-medium">
+                        Email has been sent successfully!
+                      </div>
                     ) : submitStatus === "error" ? (
-                      <div className="text-red-600 dark:text-red-300 mb-5 font-medium">Hubo un error al enviar el correo electrónico.</div>
+                      <div className="text-red-600 dark:text-red-300 mb-5 font-medium">
+                        Something went wrong while sending the email!
+                      </div>
                     ) : null}
                     <button
                       type="submit"
                       className="text-xl px-3 py-2 border dark:text-white hover:bg-cyan-500 flex transition-all border-gray-900 dark:border-cyan-300 rounded ease-linear hover:duration-150 hover:scale-105"
                       disabled={isSubmitting}
                     >
-                      {isSubmitting ? "Por favor, espera..." : "¡Contáctame!"}
+                      {isSubmitting ? "Please, wait..." : "Contact me!"}
                     </button>
                   </div>
                 </form>

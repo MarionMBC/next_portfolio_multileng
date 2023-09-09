@@ -21,28 +21,31 @@ interface Props {
 }
 
 export default function NavBar({setDarkToggle, darkToggle}: Props) {
-  const [activeTab, setActiveTab] = useState(navigation[0].name); // Estado para mantener la pestaña activa
+  const currentPath = window.location.pathname;
 
+  const [activeTab, setActiveTab] = useState(
+    navigation.find((item) => item.to === currentPath)?.name || navigation[0].name
+  );
   return (
     <Disclosure as="nav" className="bg-white dark:bg-gray-900 z-[99999]">
       {({open}) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 z-50 items-center justify-between">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                {/* Mobile menu button */}
-                <Disclosure.Button
-                  className="inline-flex z-40 items-center justify-center rounded-md p-2 text-black hover:bg-cyan-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                  <span className="sr-only">Open main menu</span>
-                  {open ? (
-                    <HiX className="block h-6 w-6 dark:text-white" aria-hidden="true"/>
-                  ) : (
-                    <HiMenu className="block h-6 w-6 dark:text-white" aria-hidden="true"/>
-                  )}
-                </Disclosure.Button>
-              </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="text-black self-center text-2xl font-medium dark:text-white">
+              {/*<div className="absolute inset-y-0 left-0 flex items-center sm:hidden">*/}
+              {/*  /!* Mobile menu button *!/*/}
+              {/*  <Disclosure.Button*/}
+              {/*    className="inline-flex z-40 items-center justify-center rounded-md p-2 text-black hover:bg-cyan-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">*/}
+              {/*    <span className="sr-only">Open main menu</span>*/}
+              {/*    {open ? (*/}
+              {/*      <HiX className="block h-6 w-6 dark:text-white" aria-hidden="true"/>*/}
+              {/*    ) : (*/}
+              {/*      <HiMenu className="block h-6 w-6 dark:text-white" aria-hidden="true"/>*/}
+              {/*    )}*/}
+              {/*  </Disclosure.Button>*/}
+              {/*</div>*/}
+              <div className="flex flex-1 items-center justify-start sm:items-stretch sm:justify-start">
+                <div className="text-black ms-3 self-center text-2xl font-medium dark:text-white">
                   Marion<span className="text-cyan-500 dark:text-cyan-300">MBC</span>
                 </div>
                 <div className="absolute right-0">

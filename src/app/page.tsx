@@ -19,6 +19,7 @@ import img2 from '../../public/images/code1.svg'
 import syncpro from '../../public/images/syncpro.webp'
 import alura from '../../public/images/alura.png'
 import {CustomTimeLine} from "@/app/components/timeline/timeline";
+import MyComponent from "@/app/contact/page";
 
 
 export default function Home() {
@@ -154,7 +155,7 @@ export default function Home() {
       </section>
 
       <section>
-        
+        <MyComponent/>
       </section>
 
 
