@@ -23,7 +23,6 @@ const MyComponent = () => {
     const formElement = formRef.current; // Obtener el elemento de formulario HTML real
 
 
-    // @ts-ignore
     if (formElement) { // Verifica si formElement no es null
       emailJs
         .sendForm("service_thdapbe", "template_zsph0r8", formElement, "wbYUKruC4DBaPqMoM")
