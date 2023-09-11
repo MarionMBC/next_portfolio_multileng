@@ -1,10 +1,11 @@
 "use client";
 
-import {Fragment, useState} from "react";
+import {Fragment, useEffect, useState} from "react";
 import Link from "next/link";
 import {Disclosure} from "@headlessui/react";
 import {HiX, HiMenu} from "react-icons/hi"; // Corregir nombres de íconos
 import "./NavBar.css";
+import {useRouter} from "next/router";
 
 const navigation = [
   {name: "Home", to: "/", current: true},
@@ -21,11 +22,17 @@ interface Props {
 }
 
 export default function NavBar({setDarkToggle, darkToggle}: Props) {
-  const currentPath = window.location.pathname;
+  const [activeTab, setActiveTab] = useState("");
 
-  const [activeTab, setActiveTab] = useState(
-    navigation.find((item) => item.to === currentPath)?.name || navigation[0].name
-  );
+  useEffect(() => {
+    // Verificar si estamos en el navegador antes de acceder a window.location
+    if (typeof window !== "undefined") {
+      const currentPath = window.location.pathname;
+      setActiveTab(
+        navigation.find((item) => item.to === currentPath)?.name || navigation[0].name
+      );
+    }
+  }, []);
   return (
     <Disclosure as="nav" className="bg-white dark:bg-gray-900 z-[99999]">
       {({open}) => (

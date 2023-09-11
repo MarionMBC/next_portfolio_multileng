@@ -22,27 +22,25 @@ const MyComponent = () => {
 
     const formElement = formRef.current; // Obtener el elemento de formulario HTML real
 
-    if (formElement) {
-      if (typeof window !== 'undefined') {
-        emailJs
-          .sendForm("service_thdapbe", "template_zsph0r8", formElement, "wbYUKruC4DBaPqMoM")
-          .then(
-            (result) => {
-              console.log(result.text);
-              setName("");
-              setEmail("");
-              setMessage("");
-              setSubmitStatus("success"); // Cambia el estado a éxito
-            },
-            (error) => {
-              console.log(error.text);
-              setSubmitStatus("error"); // Cambia el estado a error
-            }
-          )
-          .finally(() => {
-            setIsSubmitting(false);
-          });
-      }
+    if (formElement) { // Verifica si formElement no es null
+      emailJs
+        .sendForm("service_thdapbe", "template_zsph0r8", formElement, "wbYUKruC4DBaPqMoM")
+        .then(
+          (result) => {
+            console.log(result.text);
+            setName("");
+            setEmail("");
+            setMessage("");
+            setSubmitStatus("success"); // Cambia el estado a éxito
+          },
+          (error) => {
+            console.log(error.text);
+            setSubmitStatus("error"); // Cambia el estado a error
+          }
+        )
+        .finally(() => {
+          setIsSubmitting(false);
+        });
     }
   };
 
