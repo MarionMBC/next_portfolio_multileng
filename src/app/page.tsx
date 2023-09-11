@@ -22,12 +22,8 @@ import syncpro from '../../public/images/syncpro.webp'
 import alura from '../../public/images/alura.png'
 import {CustomTimeLine} from "@/app/components/timeline/timeline";
 import MyComponent from "@/app/contact/page";
-// @ts-ignore
-import cv from "../../public/images/Marion_Bustamante_Resume_EN.pdf"
 
-function downloadPDF() {
-  window.open(cv);
-}
+
 
 export default function Home() {
 
@@ -57,16 +53,17 @@ export default function Home() {
               </p>
 
               <div className='mt-5 relative'>
-                <button
-                  onClick={downloadPDF}
-                  className='flex space-x-2 items-center justify-center px-3 py-2 border border-transparent text-base font-medium rounded-md text-white bg-cyan-500 hover:bg-cyan-700 cursor-pointer'
+                <a
+                  href={'/Marion_Bustamante_Resume_EN.pdf'}
+                  target={'_blank'}
+                  className='flex w-48 space-x-2 items-center justify-center px-3 py-2 border border-transparent text-base font-medium rounded-md text-white bg-cyan-500 hover:bg-cyan-700 cursor-pointer'
                 >
                   <p>
-                    Resume
+                    Download CV
                   </p>
                   <BiDownload className='inline-block ms-2'/>
 
-                </button>
+                </a>
               </div>
             </section>
 
