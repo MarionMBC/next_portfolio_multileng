@@ -13,15 +13,19 @@ import {
   DiPython,
   DiReact,
 } from 'react-icons/di'
-import {BiDownload, BiLogoRedux} from 'react-icons/bi'
+import {BiDownload, BiLogoPhp, BiLogoRedux} from 'react-icons/bi'
 
 
-import {SiFirebase, SiGithub, SiLinkedin, SiTailwindcss} from 'react-icons/si'
+import {SiExpress, SiFirebase, SiGithub, SiLinkedin, SiTailwindcss} from 'react-icons/si'
 import img2 from '../../public/images/code1.svg'
 import syncpro from '../../public/images/syncpro.webp'
 import alura from '../../public/images/alura.png'
+import fazt from '../../public/images/fazt.png'
+import healthfiles from '../../public/images/healthfiles.png'
 import {CustomTimeLine} from "@/app/components/timeline/timeline";
 import MyComponent from "@/app/contact/page";
+import {FiFigma} from "react-icons/fi";
+import {TbBrandReactNative} from "react-icons/tb";
 
 
 
@@ -144,13 +148,46 @@ export default function Home() {
         <div className={'p-5 flex flex-col items-center sm:items-start space-y-3 justify-center'}>
           <p className={'text-xl font-medium'}>Syncpro</p>
           <text className={''}>Enterprise Resource Planning (ERP) system that allows efficient and secure management of businesses.</text>
-          <div className={'flex space-x-2 cursor-pointer z-40 text-custom-yellow'}>
+          <div className={'flex space-x-2 items-center cursor-pointer z-40 text-custom-yellow'}>
             <DiReact className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
             <SiTailwindcss className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
-            <DiMsqlServer className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
-            <SiFirebase className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
+            <DiMysql className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
+            <SiFirebase className={'text-3xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
             <DiNodejs className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
+            <SiExpress className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
             <BiLogoRedux className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
+          </div>
+        </div>
+      </section>
+      <section className='px-5 lg:px-40 mb-16 flex flex-col sm:flex-row items-center justify-items-center sm:justify-start'>
+        <Image className={'w-72'} alt={''} src={fazt}/>
+        <div className={'p-5 flex flex-col items-center sm:items-start space-y-3 justify-center'}>
+          <p className={'text-xl font-medium'}>Fazt Delivery</p>
+          <text className={''}>The first web application that allows you to order clothes from your favorite stores, shirts, pants, dresses, shoes, accessories and more, in one place, shopping has never been so easy!
+          </text>
+          <div className={'flex space-x-2 cursor-pointer items-center z-40 text-custom-yellow'}>
+            <BiLogoPhp className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
+            <DiBootstrap className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
+            <DiJavascript className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
+            <FiFigma className={'text-3xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
+            <DiMysql className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
+          </div>
+        </div>
+      </section>
+      <section className='px-5 lg:px-40 mb-16 flex flex-col sm:flex-row items-center justify-items-center sm:justify-start'>
+        <Image className={'w-72'} alt={''} src={healthfiles}/>
+        <div className={'p-5 flex flex-col items-center sm:items-start space-y-3 justify-center'}>
+          <p className={'text-xl font-medium'}>HealthFiles</p>
+          <text className={''}>
+            HealthFiles is a react native application that allows you to manage your medical records, appointments, prescriptions and more, in one place, managing your health has never been so easy!
+          </text>
+          <div className={'flex space-x-2 cursor-pointer items-center z-40 text-custom-yellow'}>
+            <DiReact className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
+            <SiFirebase className={'text-3xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
+            <DiNodejs className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
+            <SiExpress className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
+            <FiFigma className={'text-3xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
+            <DiMysql className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
           </div>
         </div>
       </section>
