@@ -58,7 +58,7 @@ export default function Home() {
 
               <div className='mt-5 relative'>
                 <a
-                  href={'/Marion_Bustamante_Resume_EN.pdf'}
+                  href={'/Marion Bustamante-CV-ENGLISH.pdf'}
                   target={'_blank'}
                   className='flex w-48 space-x-2 items-center justify-center px-3 py-2 border border-transparent text-base font-medium rounded-md text-white bg-cyan-500 hover:bg-cyan-700 cursor-pointer'
                 >
