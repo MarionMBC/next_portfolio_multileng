@@ -21,7 +21,7 @@ import img2 from '../../public/images/code1.svg'
 import syncpro from '../../public/images/syncpro.webp'
 import alura from '../../public/images/alura.png'
 import fazt from '../../public/images/fazt.png'
-import uno fron '../../public/images/Group 4.png'
+import uno from '../../public/images/Group 4.png'
 import healthfiles from '../../public/images/healthfiles.png'
 import {CustomTimeLine} from "@/app/components/timeline/timeline";
 import MyComponent from "@/app/contact/page";
