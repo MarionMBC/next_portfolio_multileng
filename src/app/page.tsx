@@ -197,7 +197,7 @@ export default function Home() {
         <div className={'p-5 flex flex-col items-center sm:items-start space-y-3 justify-center'}>
           <p className={'text-xl font-medium'}>UNO Trivia</p>
           <text className={''}>
-            "UNO Trivia" is an interactive web app that allows you to win a personalized certificate with your photo and send it to your phone number through the WhatsApp API.
+            UNO Trivia is an interactive web app that allows you to win a personalized certificate with your photo and send it to your phone number through the WhatsApp API.
           </text>
           <div className={'flex space-x-2 cursor-pointer items-center z-40 text-custom-yellow'}>
             <DiReact className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
