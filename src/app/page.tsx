@@ -21,6 +21,7 @@ import img2 from '../../public/images/code1.svg'
 import syncpro from '../../public/images/syncpro.webp'
 import alura from '../../public/images/alura.png'
 import fazt from '../../public/images/fazt.png'
+import uno fron '../../public/images/Group 4.png'
 import healthfiles from '../../public/images/healthfiles.png'
 import {CustomTimeLine} from "@/app/components/timeline/timeline";
 import MyComponent from "@/app/contact/page";
@@ -58,7 +59,7 @@ export default function Home() {
 
               <div className='mt-5 relative'>
                 <a
-                  href={'/Marion Bustamante-CV-ENGLISH.pdf'}
+                  href={'/Marion Bustamante-CV-SPA.pdf'}
                   target={'_blank'}
                   className='flex w-48 space-x-2 items-center justify-center px-3 py-2 border border-transparent text-base font-medium rounded-md text-white bg-cyan-500 hover:bg-cyan-700 cursor-pointer'
                 >
@@ -188,6 +189,22 @@ export default function Home() {
             <SiExpress className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
             <FiFigma className={'text-3xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
             <DiMysql className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
+          </div>
+        </div>
+      </section>
+      <section className='px-5 lg:px-40 mb-16 flex flex-col sm:flex-row items-center justify-items-center sm:justify-start'>
+        <Image className={'w-72'} alt={''} src={uno}/>
+        <div className={'p-5 flex flex-col items-center sm:items-start space-y-3 justify-center'}>
+          <p className={'text-xl font-medium'}>UNO Trivia</p>
+          <text className={''}>
+            "UNO Trivia" is an interactive web app that allows you to win a personalized certificate with your photo and send it to your phone number through the WhatsApp API.
+          </text>
+          <div className={'flex space-x-2 cursor-pointer items-center z-40 text-custom-yellow'}>
+            <DiReact className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
+            <SiFirebase className={'text-3xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
+            <FiFigma className={'text-3xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
+            <DiMysql className={'text-4xl hover:text-cyan-300 hover:scale-105 transition-all ease-in-out'}/>
+
           </div>
         </div>
       </section>
