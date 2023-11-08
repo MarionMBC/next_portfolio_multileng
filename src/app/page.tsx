@@ -21,7 +21,7 @@ import img2 from '../../public/images/code1.svg'
 import syncpro from '../../public/images/syncpro.webp'
 import alura from '../../public/images/alura.png'
 import fazt from '../../public/images/fazt.png'
-import uno from '../../public/images/Group 4.png'
+import uno from '../../public/images/g.png'
 import healthfiles from '../../public/images/healthfiles.png'
 import {CustomTimeLine} from "@/app/components/timeline/timeline";
 import MyComponent from "@/app/contact/page";
@@ -193,7 +193,7 @@ export default function Home() {
         </div>
       </section>
       <section className='px-5 lg:px-40 mb-16 flex flex-col sm:flex-row items-center justify-items-center sm:justify-start'>
-        <Image className={'w-72'} alt={''} src={uno}/>
+        <Image className={'w-72'} alt={'...'} src={uno}/>
         <div className={'p-5 flex flex-col items-center sm:items-start space-y-3 justify-center'}>
           <p className={'text-xl font-medium'}>UNO Trivia</p>
           <text className={''}>
